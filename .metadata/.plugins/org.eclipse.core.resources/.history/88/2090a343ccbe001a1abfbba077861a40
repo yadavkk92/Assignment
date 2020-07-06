@@ -1,0 +1,32 @@
+package com.assignment.recruitment.database;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.assignment.recruitment.offer.Application;
+import com.assignment.recruitment.offer.Application.Status;
+import com.assignment.recruitment.offer.Offer;
+
+public class DatabaseClass {
+
+	private static Map<Integer,Offer> offers = new HashMap<>();
+	private static List<Application> applications = new ArrayList<>();
+	private static Map<Integer,List<Application>> applist = new HashMap<>();
+	
+	static{
+		applications.add(new Application("Java Developer","rahul@gmail.com","5 yrs experienced beckend java developer",Status.INVITED.name(),
+				      new Application("Java Developer","rahul@gmail.com","5 yrs experienced beckend java developer",Status.HIRED.name())));
+		offers.put(1,new Offer("Java Developer","2020-07-21",1,applications)));
+	    offers.put(2,new Offer("App Tester","2020-07-15",1));
+	   
+	}   
+	
+	public static Map<Integer, Offer> getOffers(){
+		return offers;
+	}
+	public static List<Application> getApplications(){
+		return applications;
+	}
+}

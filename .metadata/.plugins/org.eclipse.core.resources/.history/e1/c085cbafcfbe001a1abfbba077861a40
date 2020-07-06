@@ -1,0 +1,10 @@
+package com.assignment.recruitment.offer;
+
+import java.util.Map;
+
+import com.assignment.recruitment.database.DatabaseClass;
+
+public class ApplicationService {
+
+	//private Map<Integer, Application> applications = DatabaseClass.getApplications();
+}

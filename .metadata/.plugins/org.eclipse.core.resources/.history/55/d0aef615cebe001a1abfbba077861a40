@@ -1,0 +1,35 @@
+package com.assignment.recruitment.database;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.assignment.recruitment.offer.Application;
+import com.assignment.recruitment.offer.Application.Status;
+import com.assignment.recruitment.offer.Offer;
+
+public class DatabaseClass {
+
+	private static Map<Integer,Offer> offers = new HashMap<>();
+	private static ArrayList<Application> applications = new ArrayList<>();
+	private static ArrayList<Application> applications2 = new ArrayList<>();
+	//private static Map<Integer,List<Application>> applist = new HashMap<>();
+	
+	static{
+		applications.add(new Application("Java Developer","kamal@gmail.com","5 yrs experienced beckend java developer",Status.HIRED.name()));
+	    applications.add(new Application("Java Developer","pankaj@gmail.com","Java Spring developer with angular",Status.INVITED.name()));
+	    
+	    applications2.add(new Application("App Tester","rahul@gmail.com","Automation Tset Engineer",Status.INVITED.name()));
+		offers.put(1,new Offer("Java Developer","2020-07-21",2,applications));
+	    offers.put(2,new Offer("App Tester","2020-07-15",1,applications2));
+	   
+	}   
+	
+	public static Map<Integer, Offer> getOffers(){
+		return offers;
+	}
+	public static List<Application> getApplications(){
+		return applications;
+	}
+}

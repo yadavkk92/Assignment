@@ -1,0 +1,11 @@
+package com.assignment.recruitment.offer;
+
+public class Application {
+
+	private String email;
+	private String resume;
+	private enum status {
+			APPLIED, INVITED, REJECTED, HIRED;
+	}
+	
+}

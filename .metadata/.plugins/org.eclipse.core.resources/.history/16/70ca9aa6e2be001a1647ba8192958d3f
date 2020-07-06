@@ -1,0 +1,33 @@
+package com.assignment.recruitment.offer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.assignment.recruitment.database.DatabaseClass;
+
+public class ApplicationService {
+
+	private List<Application> applications = DatabaseClass.getApplications();
+	
+	public Application getApplication(long id){
+		Application app = null;
+		for(Application application : applications) {
+    		if(application.getId() == id) {
+    			app = application;
+    			break;
+    			}
+    		}
+		return app;
+}
+	public List<Application> getApplications(String id) {
+		
+		List<Application> app = new ArrayList<>();
+    	for(Application application : applications) {
+    		if(!application.getRelatedOffer().equals(id))
+    			continue;
+    		else
+    			app.add(application);
+    		}
+		return app;	
+	}
+}

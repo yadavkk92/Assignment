@@ -1,0 +1,33 @@
+package com.assignment.recruitment.offer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.assignment.recruitment.database.DatabaseClass;
+
+@Service
+public class ApplicationService {
+
+	private List<Application> applications = DatabaseClass.getApplications();
+	
+	public Application getApplication(String title,long id){
+		Application app = null;
+		for(Application application : applications) {
+    		if(application.getId() == id && (application.getRelatedOffer()).equals(title))
+    			app = application;
+    			break;
+    		}
+		return app;
+}
+	public List<Application> getApplications(String id) {
+		
+		List<Application> app = new ArrayList<>();
+    	for(Application application : applications) {
+    		if(application.getRelatedOffer().equals(id))
+    			app.add(application);
+    		}
+		return app;	
+	}
+}

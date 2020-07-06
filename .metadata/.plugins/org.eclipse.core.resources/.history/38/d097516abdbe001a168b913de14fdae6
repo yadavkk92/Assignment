@@ -1,0 +1,31 @@
+package com.assignment.recruitment.offer;
+
+public class Application {
+
+	private String relatedOffer;
+	private String email;
+	private String resume;
+	private enum status {
+			APPLIED, INVITED, REJECTED, HIRED;
+	}
+	public String getRelatedOffer() {
+		return relatedOffer;
+	}
+	public void setRelatedOffer(String relatedOffer) {
+		this.relatedOffer = relatedOffer;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getResume() {
+		return resume;
+	}
+	public void setResume(String resume) {
+		this.resume = resume;
+	}
+	
+	
+}

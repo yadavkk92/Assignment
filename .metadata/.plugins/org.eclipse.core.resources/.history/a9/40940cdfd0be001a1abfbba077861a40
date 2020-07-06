@@ -1,0 +1,19 @@
+package com.assignment.recruitment.offer;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import com.assignment.recruitment.database.DatabaseClass;
+
+public class ApplicationService {
+
+	private List<Application> applications = DatabaseClass.getApplications();
+	
+	public List<Application> getAllApplications(){
+    	
+    	return applications;
+			
+    }
+	
+}
