@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="com.assignment.recruitment.offer.Application.Status"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonFormat"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonFormat.Shape"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonValue"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseStatus"/>
+<fullyQualifiedTypeName name="com.assignment.recruitment.offer.NotFoundException"/>
+<fullyQualifiedTypeName name="com.assignment.recruitment.offer.OfferService"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+</qualifiedTypeNameHistroy>
